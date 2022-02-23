@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const ForestCard = React.forwardRef(
   ({ dataObj, setModalOpen, setSelectList }, ref) => {
-    const { fcNm: fcNm, fcAddr: fcAddr, ref1: ref1, memo } = dataObj;
+    const { fcNm, fcAddr, ref1, memo } = dataObj;
     const clickHandler = () => {
       setModalOpen(true);
       setSelectList({ fcNm, fcAddr, ref1, memo });
